@@ -1,5 +1,5 @@
-name: 'Hello Universe'
-description: 'This action welcomes the user to the GitHub Universe'
+name: 'custom-gh-action-javascript-v1'
+description: 'Introduction to GitHub Actions'
 inputs:
   GITHUB_TOKEN:
     description: 'This is the GitHub token that lets the action authenticate'
