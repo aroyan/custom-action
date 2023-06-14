@@ -9793,7 +9793,17 @@ const core = __nccwpck_require__(1413)
 const github = __nccwpck_require__(5739)
 
 async function main(){
+
+    const GITHUB_TOKEN = core.getInput("GITHUB_TOKEN")
+    const oktokit = github.getOctokit(GITHUB_TOKEN)
+
+    const {context} = __nccwpck_require__(5739)
+
+    console.log(JSON.stringify(context.payload, null, "     " ))
+    console.log(JSON.stringify(context, null, "     " ))
+
     console.log("Hello GitHub Actions, from JavaScript")
+    
 }
 
 main()
